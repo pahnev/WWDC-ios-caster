@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDE1B92920CBB99C00368FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B92820CBB99C00368FDC /* AppDelegate.swift */; };
+		EDE1B92B20CBB99C00368FDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B92A20CBB99C00368FDC /* ViewController.swift */; };
+		EDE1B92E20CBB99C00368FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B92C20CBB99C00368FDC /* Main.storyboard */; };
+		EDE1B93020CBB99E00368FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B92F20CBB99E00368FDC /* Assets.xcassets */; };
+		EDE1B93320CBB99E00368FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B93120CBB99E00368FDC /* LaunchScreen.storyboard */; };
+		EDE1B95420CBBA9200368FDC /* strip_unused_archs.sh in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94520CBBA9200368FDC /* strip_unused_archs.sh */; };
+		EDE1B95520CBBA9200368FDC /* utf.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94720CBBA9200368FDC /* utf.html */; };
+		EDE1B95620CBBA9200368FDC /* stl.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94820CBBA9200368FDC /* stl.html */; };
+		EDE1B95720CBBA9200368FDC /* libresample.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94920CBBA9200368FDC /* libresample.html */; };
+		EDE1B95820CBBA9200368FDC /* zlib.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94A20CBBA9200368FDC /* zlib.html */; };
+		EDE1B95920CBBA9200368FDC /* dynamic_annotations.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94B20CBBA9200368FDC /* dynamic_annotations.html */; };
+		EDE1B95A20CBBA9200368FDC /* tz.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94C20CBBA9200368FDC /* tz.html */; };
+		EDE1B95B20CBBA9200368FDC /* kissfft.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94D20CBBA9200368FDC /* kissfft.html */; };
+		EDE1B95C20CBBA9200368FDC /* oss_licenses_index.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94E20CBBA9200368FDC /* oss_licenses_index.txt */; };
+		EDE1B95D20CBBA9200368FDC /* pcre.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B94F20CBBA9200368FDC /* pcre.html */; };
+		EDE1B95E20CBBA9200368FDC /* icu.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B95020CBBA9200368FDC /* icu.html */; };
+		EDE1B95F20CBBA9200368FDC /* eigen3.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B95120CBBA9200368FDC /* eigen3.html */; };
+		EDE1B96020CBBA9200368FDC /* re2.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B95220CBBA9200368FDC /* re2.html */; };
+		EDE1B96120CBBA9200368FDC /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE1B95320CBBA9200368FDC /* GoogleCast.framework */; };
+		EDE1B96220CBBAD800368FDC /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE1B95320CBBA9200368FDC /* GoogleCast.framework */; };
+		EDE1B96320CBBAD800368FDC /* GoogleCast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDE1B95320CBBA9200368FDC /* GoogleCast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDE1B96620CBBFAA00368FDC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B96520CBBFAA00368FDC /* Store.swift */; };
+		EDE1B96E20CBEFF600368FDC /* WWDCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B96D20CBEFF600368FDC /* WWDCResponse.swift */; };
+		EDE1B97420CBF03100368FDC /* CodableEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B97320CBF03100368FDC /* CodableEquatable.swift */; };
+		EDE1B97620CBF05100368FDC /* HTTPResponseHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B97520CBF05100368FDC /* HTTPResponseHeaders.swift */; };
+		EDE1B97A20CBF30300368FDC /* VideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B97920CBF30300368FDC /* VideosViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDE1B96420CBBAD800368FDC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EDE1B96320CBBAD800368FDC /* GoogleCast.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EDE1B92520CBB99C00368FDC /* WWDC-ios-cast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WWDC-ios-cast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE1B92820CBB99C00368FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDE1B92A20CBB99C00368FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDE1B92D20CBB99C00368FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDE1B92F20CBB99E00368FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDE1B93220CBB99E00368FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDE1B93420CBB99E00368FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE1B93B20CBBA3300368FDC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EDE1B93D20CBBA4700368FDC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EDE1B93E20CBBA4700368FDC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		EDE1B93F20CBBA4700368FDC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EDE1B94520CBBA9200368FDC /* strip_unused_archs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = strip_unused_archs.sh; sourceTree = "<group>"; };
+		EDE1B94720CBBA9200368FDC /* utf.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = utf.html; sourceTree = "<group>"; };
+		EDE1B94820CBBA9200368FDC /* stl.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = stl.html; sourceTree = "<group>"; };
+		EDE1B94920CBBA9200368FDC /* libresample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = libresample.html; sourceTree = "<group>"; };
+		EDE1B94A20CBBA9200368FDC /* zlib.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = zlib.html; sourceTree = "<group>"; };
+		EDE1B94B20CBBA9200368FDC /* dynamic_annotations.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dynamic_annotations.html; sourceTree = "<group>"; };
+		EDE1B94C20CBBA9200368FDC /* tz.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tz.html; sourceTree = "<group>"; };
+		EDE1B94D20CBBA9200368FDC /* kissfft.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kissfft.html; sourceTree = "<group>"; };
+		EDE1B94E20CBBA9200368FDC /* oss_licenses_index.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oss_licenses_index.txt; sourceTree = "<group>"; };
+		EDE1B94F20CBBA9200368FDC /* pcre.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pcre.html; sourceTree = "<group>"; };
+		EDE1B95020CBBA9200368FDC /* icu.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = icu.html; sourceTree = "<group>"; };
+		EDE1B95120CBBA9200368FDC /* eigen3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = eigen3.html; sourceTree = "<group>"; };
+		EDE1B95220CBBA9200368FDC /* re2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = re2.html; sourceTree = "<group>"; };
+		EDE1B95320CBBA9200368FDC /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleCast.framework; sourceTree = "<group>"; };
+		EDE1B96520CBBFAA00368FDC /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		EDE1B96D20CBEFF600368FDC /* WWDCResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDCResponse.swift; sourceTree = "<group>"; };
+		EDE1B97320CBF03100368FDC /* CodableEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableEquatable.swift; sourceTree = "<group>"; };
+		EDE1B97520CBF05100368FDC /* HTTPResponseHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseHeaders.swift; sourceTree = "<group>"; };
+		EDE1B97920CBF30300368FDC /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDE1B92220CBB99C00368FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE1B96220CBBAD800368FDC /* GoogleCast.framework in Frameworks */,
+				EDE1B96120CBBA9200368FDC /* GoogleCast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDE1B91C20CBB99C00368FDC = {
+			isa = PBXGroup;
+			children = (
+				EDE1B94320CBBA9200368FDC /* GoogleCastSDK-ios-4.2.0 */,
+				EDE1B92720CBB99C00368FDC /* WWDC-ios-cast */,
+				EDE1B92620CBB99C00368FDC /* Products */,
+				EDE1B93A20CBBA3200368FDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDE1B92620CBB99C00368FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1B92520CBB99C00368FDC /* WWDC-ios-cast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDE1B92720CBB99C00368FDC /* WWDC-ios-cast */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1B96C20CBEFBA00368FDC /* WWDCKit */,
+				EDE1B92820CBB99C00368FDC /* AppDelegate.swift */,
+				EDE1B92A20CBB99C00368FDC /* ViewController.swift */,
+				EDE1B97920CBF30300368FDC /* VideosViewModel.swift */,
+				EDE1B92C20CBB99C00368FDC /* Main.storyboard */,
+				EDE1B92F20CBB99E00368FDC /* Assets.xcassets */,
+				EDE1B93120CBB99E00368FDC /* LaunchScreen.storyboard */,
+				EDE1B93420CBB99E00368FDC /* Info.plist */,
+			);
+			path = "WWDC-ios-cast";
+			sourceTree = "<group>";
+		};
+		EDE1B93A20CBBA3200368FDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1B93F20CBBA4700368FDC /* AudioToolbox.framework */,
+				EDE1B93D20CBBA4700368FDC /* AVFoundation.framework */,
+				EDE1B93E20CBBA4700368FDC /* CoreBluetooth.framework */,
+				EDE1B93B20CBBA3300368FDC /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDE1B94320CBBA9200368FDC /* GoogleCastSDK-ios-4.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1B94420CBBA9200368FDC /* Tools */,
+				EDE1B94620CBBA9200368FDC /* OpenSourceLicenses */,
+				EDE1B95320CBBA9200368FDC /* GoogleCast.framework */,
+			);
+			path = "GoogleCastSDK-ios-4.2.0";
+			sourceTree = "<group>";
+		};
+		EDE1B94420CBBA9200368FDC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1B94520CBBA9200368FDC /* strip_unused_archs.sh */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		EDE1B94620CBBA9200368FDC /* OpenSourceLicenses */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1B94720CBBA9200368FDC /* utf.html */,
+				EDE1B94820CBBA9200368FDC /* stl.html */,
+				EDE1B94920CBBA9200368FDC /* libresample.html */,
+				EDE1B94A20CBBA9200368FDC /* zlib.html */,
+				EDE1B94B20CBBA9200368FDC /* dynamic_annotations.html */,
+				EDE1B94C20CBBA9200368FDC /* tz.html */,
+				EDE1B94D20CBBA9200368FDC /* kissfft.html */,
+				EDE1B94E20CBBA9200368FDC /* oss_licenses_index.txt */,
+				EDE1B94F20CBBA9200368FDC /* pcre.html */,
+				EDE1B95020CBBA9200368FDC /* icu.html */,
+				EDE1B95120CBBA9200368FDC /* eigen3.html */,
+				EDE1B95220CBBA9200368FDC /* re2.html */,
+			);
+			path = OpenSourceLicenses;
+			sourceTree = "<group>";
+		};
+		EDE1B96C20CBEFBA00368FDC /* WWDCKit */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1B97720CBF0D700368FDC /* Model */,
+				EDE1B97820CBF0F100368FDC /* Networking */,
+			);
+			path = WWDCKit;
+			sourceTree = "<group>";
+		};
+		EDE1B97720CBF0D700368FDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1B97320CBF03100368FDC /* CodableEquatable.swift */,
+				EDE1B96D20CBEFF600368FDC /* WWDCResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDE1B97820CBF0F100368FDC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EDE1B96520CBBFAA00368FDC /* Store.swift */,
+				EDE1B97520CBF05100368FDC /* HTTPResponseHeaders.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDE1B92420CBB99C00368FDC /* WWDC-ios-cast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE1B93720CBB99E00368FDC /* Build configuration list for PBXNativeTarget "WWDC-ios-cast" */;
+			buildPhases = (
+				EDE1B92120CBB99C00368FDC /* Sources */,
+				EDE1B92220CBB99C00368FDC /* Frameworks */,
+				EDE1B92320CBB99C00368FDC /* Resources */,
+				EDE1B96420CBBAD800368FDC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WWDC-ios-cast";
+			productName = "WWDC-ios-cast";
+			productReference = EDE1B92520CBB99C00368FDC /* WWDC-ios-cast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDE1B91D20CBB99C00368FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Pahnev;
+				TargetAttributes = {
+					EDE1B92420CBB99C00368FDC = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = EDE1B92020CBB99C00368FDC /* Build configuration list for PBXProject "WWDC-ios-cast" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDE1B91C20CBB99C00368FDC;
+			productRefGroup = EDE1B92620CBB99C00368FDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDE1B92420CBB99C00368FDC /* WWDC-ios-cast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDE1B92320CBB99C00368FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE1B95720CBBA9200368FDC /* libresample.html in Resources */,
+				EDE1B93320CBB99E00368FDC /* LaunchScreen.storyboard in Resources */,
+				EDE1B93020CBB99E00368FDC /* Assets.xcassets in Resources */,
+				EDE1B95620CBBA9200368FDC /* stl.html in Resources */,
+				EDE1B96020CBBA9200368FDC /* re2.html in Resources */,
+				EDE1B95B20CBBA9200368FDC /* kissfft.html in Resources */,
+				EDE1B95A20CBBA9200368FDC /* tz.html in Resources */,
+				EDE1B95F20CBBA9200368FDC /* eigen3.html in Resources */,
+				EDE1B95D20CBBA9200368FDC /* pcre.html in Resources */,
+				EDE1B95920CBBA9200368FDC /* dynamic_annotations.html in Resources */,
+				EDE1B95520CBBA9200368FDC /* utf.html in Resources */,
+				EDE1B95820CBBA9200368FDC /* zlib.html in Resources */,
+				EDE1B95C20CBBA9200368FDC /* oss_licenses_index.txt in Resources */,
+				EDE1B92E20CBB99C00368FDC /* Main.storyboard in Resources */,
+				EDE1B95E20CBBA9200368FDC /* icu.html in Resources */,
+				EDE1B95420CBBA9200368FDC /* strip_unused_archs.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDE1B92120CBB99C00368FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE1B92B20CBB99C00368FDC /* ViewController.swift in Sources */,
+				EDE1B97620CBF05100368FDC /* HTTPResponseHeaders.swift in Sources */,
+				EDE1B96E20CBEFF600368FDC /* WWDCResponse.swift in Sources */,
+				EDE1B92920CBB99C00368FDC /* AppDelegate.swift in Sources */,
+				EDE1B97420CBF03100368FDC /* CodableEquatable.swift in Sources */,
+				EDE1B97A20CBF30300368FDC /* VideosViewModel.swift in Sources */,
+				EDE1B96620CBBFAA00368FDC /* Store.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDE1B92C20CBB99C00368FDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE1B92D20CBB99C00368FDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDE1B93120CBB99E00368FDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE1B93220CBB99E00368FDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDE1B93520CBB99E00368FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDE1B93620CBB99E00368FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDE1B93820CBB99E00368FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V93R6ASN92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleCastSDK-ios-4.2.0",
+				);
+				INFOPLIST_FILE = "WWDC-ios-cast/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pahnev.WWDC-ios-cast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDE1B93920CBB99E00368FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V93R6ASN92;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleCastSDK-ios-4.2.0",
+				);
+				INFOPLIST_FILE = "WWDC-ios-cast/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pahnev.WWDC-ios-cast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDE1B92020CBB99C00368FDC /* Build configuration list for PBXProject "WWDC-ios-cast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE1B93520CBB99E00368FDC /* Debug */,
+				EDE1B93620CBB99E00368FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE1B93720CBB99E00368FDC /* Build configuration list for PBXNativeTarget "WWDC-ios-cast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE1B93820CBB99E00368FDC /* Debug */,
+				EDE1B93920CBB99E00368FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDE1B91D20CBB99C00368FDC /* Project object */;
+}
