@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2516D5AA22A43820009AA2CE /* Sheeeeeeeeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516D5A922A43820009AA2CE /* Sheeeeeeeeet.framework */; };
 		EDE1B92920CBB99C00368FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B92820CBB99C00368FDC /* AppDelegate.swift */; };
 		EDE1B92B20CBB99C00368FDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B92A20CBB99C00368FDC /* ViewController.swift */; };
 		EDE1B92E20CBB99C00368FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B92C20CBB99C00368FDC /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2516D5A922A43820009AA2CE /* Sheeeeeeeeet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sheeeeeeeeet.framework; path = Carthage/Build/iOS/Sheeeeeeeeet.framework; sourceTree = "<group>"; };
 		EDE1B92520CBB99C00368FDC /* WWDC-ios-cast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WWDC-ios-cast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE1B92820CBB99C00368FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE1B92A20CBB99C00368FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE1B96220CBBAD800368FDC /* GoogleCast.framework in Frameworks */,
+				2516D5AA22A43820009AA2CE /* Sheeeeeeeeet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +132,7 @@
 		EDE1B93A20CBBA3200368FDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2516D5A922A43820009AA2CE /* Sheeeeeeeeet.framework */,
 				EDE1B93F20CBBA4700368FDC /* AudioToolbox.framework */,
 				EDE1B93D20CBBA4700368FDC /* AVFoundation.framework */,
 				EDE1B93E20CBBA4700368FDC /* CoreBluetooth.framework */,
@@ -212,6 +216,7 @@
 				EDE1B92220CBB99C00368FDC /* Frameworks */,
 				EDE1B92320CBB99C00368FDC /* Resources */,
 				EDE1B96420CBBAD800368FDC /* Embed Frameworks */,
+				2516D5AB22A43845009AA2CE /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -281,6 +286,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2516D5AB22A43845009AA2CE /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Sheeeeeeeeet.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Sheeeeeeeeet.framework\n",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDE1B92120CBB99C00368FDC /* Sources */ = {
@@ -442,6 +470,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleCastSDK-ios-4.2.0",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WWDC-ios-cast/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,6 +497,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleCastSDK-ios-4.2.0",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "WWDC-ios-cast/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,0 +1,11 @@
+framework module Sheeeeeeeeet {
+  umbrella header "Sheeeeeeeeet.h"
+
+  export *
+  module * { export * }
+}
+
+module Sheeeeeeeeet.Swift {
+    header "Sheeeeeeeeet-Swift.h"
+    requires objc
+}
