@@ -25,7 +25,6 @@
 		EDE1B95E20CBBA9200368FDC /* icu.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B95020CBBA9200368FDC /* icu.html */; };
 		EDE1B95F20CBBA9200368FDC /* eigen3.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B95120CBBA9200368FDC /* eigen3.html */; };
 		EDE1B96020CBBA9200368FDC /* re2.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B95220CBBA9200368FDC /* re2.html */; };
-		EDE1B96120CBBA9200368FDC /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE1B95320CBBA9200368FDC /* GoogleCast.framework */; };
 		EDE1B96220CBBAD800368FDC /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE1B95320CBBA9200368FDC /* GoogleCast.framework */; };
 		EDE1B96320CBBAD800368FDC /* GoogleCast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDE1B95320CBBA9200368FDC /* GoogleCast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDE1B96620CBBFAA00368FDC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B96520CBBFAA00368FDC /* Store.swift */; };
@@ -88,7 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDE1B96220CBBAD800368FDC /* GoogleCast.framework in Frameworks */,
-				EDE1B96120CBBA9200368FDC /* GoogleCast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,11 +229,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Pahnev;
 				TargetAttributes = {
 					EDE1B92420CBB99C00368FDC = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -455,7 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pahnev.WWDC-ios-cast";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -481,7 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pahnev.WWDC-ios-cast";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
