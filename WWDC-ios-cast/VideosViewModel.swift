@@ -52,6 +52,28 @@ enum Event: String, CaseIterable {
             return "Other"
         }
     }
+    var imagePath: String? {
+        switch self {
+        case .wwdc2014:
+            return "https://devimages-cdn.apple.com/wwdc-services/images/3"
+        case .wwdc2015:
+            return "https://devimages-cdn.apple.com/wwdc-services/images/2"
+        case .wwdc2016:
+            return "https://devimages-cdn.apple.com/wwdc-services/images/1"
+        case .wwdc2017:
+            return "https://devimages-cdn.apple.com/wwdc-services/images/7"
+        case .wwdc2018:
+            return "https://devimages-cdn.apple.com/wwdc-services/images/42"
+        case .wwdc2019:
+            return nil
+        case .techTalks:
+            return "https://devimages-cdn.apple.com/wwdc-services/images/8"
+        case .insights:
+            return "https://devimages-cdn.apple.com/wwdc-services/images/44"
+        case .other:
+            return "https://devimages-cdn.apple.com/wwdc-services/images/45"
+        }
+    }
 }
 extension Event: Codable {}
 
@@ -76,6 +98,8 @@ struct VideosViewModel {
         let hlsURL: String
         let eventName: Event
         let duration: Int
+        let staticContentId: Int
+
     }
 
     let videos: [Video]
@@ -97,7 +121,8 @@ extension VideosViewModel {
                                                                   date: $0.originalPublishingDate ?? Date.distantPast,
                                                                   hlsURL: ($0.media?.hls)!,
                                                                   eventName: Event(rawValue: $0.eventId),
-                                                                  duration: ($0.media?.duration)!) }
+                                                                  duration: ($0.media?.duration)!,
+                                                                  staticContentId: $0.staticContentId) }
             .sorted(by: {$0.date.compare($1.date) == .orderedDescending  })
         return videos
     }
@@ -113,7 +138,9 @@ extension WWDCResponse {
 extension DateFormatter {
     static var identifierFormatter: DateFormatter {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM-dd-yyyy '@'HH:mm"
+        formatter.timeZone = TimeZone.autoupdatingCurrent
+        formatter.calendar = Calendar.autoupdatingCurrent
+        formatter.dateStyle = .short
         return formatter
     }
 }

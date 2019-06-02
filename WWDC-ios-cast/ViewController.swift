@@ -59,12 +59,9 @@ extension ViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let video = viewModel?.videos[indexPath.row] else { preconditionFailure() }
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? MediaTableViewCell else { fatalError() }
 
-        cell.textLabel?.text = video.title
-        let dateFormatter = DateFormatter.identifierFormatter
-        cell.detailTextLabel?.text = "\(video.eventName.uiRepresentable) -- \(dateFormatter.string(from: video.date))"
-
+        cell.setup(with: video)
         return cell
     }
 }

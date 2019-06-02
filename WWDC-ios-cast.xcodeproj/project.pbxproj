@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2516D5AA22A43820009AA2CE /* Sheeeeeeeeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516D5A922A43820009AA2CE /* Sheeeeeeeeet.framework */; };
 		2516D5AD22A44220009AA2CE /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516D5AC22A44220009AA2CE /* Kingfisher.framework */; };
+		2516D5AF22A44471009AA2CE /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516D5AE22A44471009AA2CE /* MediaTableViewCell.swift */; };
 		EDE1B92920CBB99C00368FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B92820CBB99C00368FDC /* AppDelegate.swift */; };
 		EDE1B92B20CBB99C00368FDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B92A20CBB99C00368FDC /* ViewController.swift */; };
 		EDE1B92E20CBB99C00368FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B92C20CBB99C00368FDC /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		2516D5A922A43820009AA2CE /* Sheeeeeeeeet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sheeeeeeeeet.framework; path = Carthage/Build/iOS/Sheeeeeeeeet.framework; sourceTree = "<group>"; };
 		2516D5AC22A44220009AA2CE /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		2516D5AE22A44471009AA2CE /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
 		EDE1B92520CBB99C00368FDC /* WWDC-ios-cast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WWDC-ios-cast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE1B92820CBB99C00368FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE1B92A20CBB99C00368FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				EDE1B92F20CBB99E00368FDC /* Assets.xcassets */,
 				EDE1B93120CBB99E00368FDC /* LaunchScreen.storyboard */,
 				EDE1B93420CBB99E00368FDC /* Info.plist */,
+				2516D5AE22A44471009AA2CE /* MediaTableViewCell.swift */,
 			);
 			path = "WWDC-ios-cast";
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				EDE1B92920CBB99C00368FDC /* AppDelegate.swift in Sources */,
 				EDE1B97420CBF03100368FDC /* CodableEquatable.swift in Sources */,
 				EDE1B97A20CBF30300368FDC /* VideosViewModel.swift in Sources */,
+				2516D5AF22A44471009AA2CE /* MediaTableViewCell.swift in Sources */,
 				EDE1B96620CBBFAA00368FDC /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
