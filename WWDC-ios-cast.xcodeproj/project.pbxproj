@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2516D5AA22A43820009AA2CE /* Sheeeeeeeeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516D5A922A43820009AA2CE /* Sheeeeeeeeet.framework */; };
+		2516D5AD22A44220009AA2CE /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516D5AC22A44220009AA2CE /* Kingfisher.framework */; };
 		EDE1B92920CBB99C00368FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B92820CBB99C00368FDC /* AppDelegate.swift */; };
 		EDE1B92B20CBB99C00368FDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE1B92A20CBB99C00368FDC /* ViewController.swift */; };
 		EDE1B92E20CBB99C00368FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE1B92C20CBB99C00368FDC /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		2516D5A922A43820009AA2CE /* Sheeeeeeeeet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sheeeeeeeeet.framework; path = Carthage/Build/iOS/Sheeeeeeeeet.framework; sourceTree = "<group>"; };
+		2516D5AC22A44220009AA2CE /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		EDE1B92520CBB99C00368FDC /* WWDC-ios-cast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WWDC-ios-cast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE1B92820CBB99C00368FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE1B92A20CBB99C00368FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			files = (
 				EDE1B96220CBBAD800368FDC /* GoogleCast.framework in Frameworks */,
 				2516D5AA22A43820009AA2CE /* Sheeeeeeeeet.framework in Frameworks */,
+				2516D5AD22A44220009AA2CE /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +135,7 @@
 		EDE1B93A20CBBA3200368FDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2516D5AC22A44220009AA2CE /* Kingfisher.framework */,
 				2516D5A922A43820009AA2CE /* Sheeeeeeeeet.framework */,
 				EDE1B93F20CBBA4700368FDC /* AudioToolbox.framework */,
 				EDE1B93D20CBBA4700368FDC /* AVFoundation.framework */,
@@ -297,12 +301,14 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Sheeeeeeeeet.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Sheeeeeeeeet.framework\n",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Sheeeeeeeeet.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
