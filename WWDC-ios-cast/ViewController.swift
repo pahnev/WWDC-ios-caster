@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleCast
+import Sheeeeeeeeet
 
 class ViewController: UIViewController {
 
@@ -19,20 +20,34 @@ class ViewController: UIViewController {
             tableView.reloadData()
         }
     }
+    private var originalViewModel: VideosViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let castButton = GCKUICastButton(frame: CGRect(x: 0, y: 0, width: 24, height: 24))
         let castButtonItem = UIBarButtonItem(customView: castButton)
-        navigationItem.setRightBarButton(castButtonItem, animated: false)
+        navigationItem.setLeftBarButton(castButtonItem, animated: false)
 
         store.getContents { response in
             DispatchQueue.main.async {
                 self.viewModel = response.videosViewModel
+                self.originalViewModel = response.videosViewModel
             }
         }
+
     }
 
+    @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
+        let button = ActionSheetOkButton(title: "Cancel")
+        var values = Event.allCases.map { ActionSheetItem(title: $0.uiRepresentable, value: $0) }
+        values.append(button)
+        let sheet = ActionSheet(items: values ) { sheet, item in
+            if let event = item.value as? Event {
+                self.viewModel = self.viewModel?.filterWith(event: event)
+            }
+        }
+        sheet.present(in: self, from: sender)
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -48,7 +63,7 @@ extension ViewController: UITableViewDataSource {
 
         cell.textLabel?.text = video.title
         let dateFormatter = DateFormatter.identifierFormatter
-        cell.detailTextLabel?.text = "\(video.eventName) -- \(dateFormatter.string(from: video.date))"
+        cell.detailTextLabel?.text = "\(video.eventName.uiRepresentable) -- \(dateFormatter.string(from: video.date))"
 
         return cell
     }
