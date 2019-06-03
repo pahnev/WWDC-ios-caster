@@ -26,24 +26,21 @@ class ViewController: UIViewController {
             UserDefaults.standard.set(watchedVideos, forKey: "watched")
         }
     }
+    private let refreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         if let watched = UserDefaults.standard.array(forKey: "watched") as? [String] {
             watchedVideos = watched
         }
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshContent), for: .valueChanged)
 
         let castButton = GCKUICastButton(frame: CGRect(x: 0, y: 0, width: 24, height: 24))
         let castButtonItem = UIBarButtonItem(customView: castButton)
         navigationItem.setLeftBarButton(castButtonItem, animated: false)
 
-        store.getContents { response in
-            DispatchQueue.main.async {
-                self.viewModel = response.videosViewModel
-                self.originalViewModel = response.videosViewModel
-            }
-        }
-
+        refreshContent()
     }
 
     @IBAction func filterButtonTapped(_ sender: UIBarButtonItem) {
@@ -56,6 +53,16 @@ class ViewController: UIViewController {
             }
         }
         sheet.present(in: self, from: sender)
+    }
+
+    @objc private func refreshContent() {
+        store.getContents { response in
+            DispatchQueue.main.async {
+                self.refreshControl.endRefreshing()
+                self.viewModel = response.videosViewModel
+                self.originalViewModel = response.videosViewModel
+            }
+        }
     }
 }
 
