@@ -99,7 +99,7 @@ struct VideosViewModel {
         let eventName: Event
         let duration: Int
         let staticContentId: Int
-
+        let id: String
     }
 
     let videos: [Video]
@@ -122,7 +122,9 @@ extension VideosViewModel {
                                                                   hlsURL: ($0.media?.hls)!,
                                                                   eventName: Event(rawValue: $0.eventId),
                                                                   duration: ($0.media?.duration)!,
-                                                                  staticContentId: $0.staticContentId) }
+                                                                  staticContentId: $0.staticContentId,
+                                                                  id: $0.id
+            )}
             .sorted(by: {$0.date.compare($1.date) == .orderedDescending  })
         return videos
     }

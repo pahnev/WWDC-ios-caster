@@ -47,12 +47,6 @@ class Store {
 
     func getContents(completion: @escaping (WWDCResponse) -> Void) {
         let request = URLRequest(url: URL(string: "https://devimages-cdn.apple.com/wwdc-services/j06970e2/296E57DA-8CE8-4526-9A3E-F0D0E8BD6543/contents.json")!)
-        //https://devimages-cdn.apple.com/wwdc-services/images/42/2093/2093_wide_900x506_1x.jpg
-
-//        "imagesPath": "https://devimages-cdn.apple.com/wwdc-services/images/42",
-//        "hashtag": "#WWDC18",
-//        "imageURL": "https://devimages-cdn.apple.com/wwdc-services/images/topic-glyphs/Source-WWDC18.pdf",
-
 
         startRequest(request) { result in
             switch result {

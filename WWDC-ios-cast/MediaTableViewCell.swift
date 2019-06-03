@@ -15,9 +15,12 @@ class MediaTableViewCell: UITableViewCell {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
 
-    func setup(with video: VideosViewModel.Video) {
+    func setup(with video: VideosViewModel.Video, isWatched: Bool) {
         headerLabel.text = "\(video.eventName.uiRepresentable)  -  \(DateFormatter.identifierFormatter.string(from: video.date))"
         titleLabel.text = video.title
+
+        headerLabel.textColor = isWatched ? UIColor.lightGray : UIColor.darkGray
+        titleLabel.textColor = isWatched ? UIColor.lightGray : UIColor.darkText
 
         guard let imagePath = video.eventName.imagePath else { return }
         let contentId = video.staticContentId
@@ -29,5 +32,6 @@ class MediaTableViewCell: UITableViewCell {
             .transition(.fade(1)),
             .cacheOriginalImage
             ])
+        mediaImageView.alpha = isWatched ? 0.6 : 1
     }
 }

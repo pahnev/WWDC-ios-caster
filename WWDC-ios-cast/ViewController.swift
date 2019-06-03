@@ -21,9 +21,18 @@ class ViewController: UIViewController {
         }
     }
     private var originalViewModel: VideosViewModel?
+    private var watchedVideos = [String]() {
+        didSet {
+            UserDefaults.standard.set(watchedVideos, forKey: "watched")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let watched = UserDefaults.standard.array(forKey: "watched") as? [String] {
+            watchedVideos = watched
+        }
+
         let castButton = GCKUICastButton(frame: CGRect(x: 0, y: 0, width: 24, height: 24))
         let castButtonItem = UIBarButtonItem(customView: castButton)
         navigationItem.setLeftBarButton(castButtonItem, animated: false)
@@ -61,9 +70,33 @@ extension ViewController: UITableViewDataSource {
         guard let video = viewModel?.videos[indexPath.row] else { preconditionFailure() }
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? MediaTableViewCell else { fatalError() }
 
-        cell.setup(with: video)
+        cell.setup(with: video, isWatched: watchedVideos.contains(video.id))
         return cell
     }
+
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        guard let video = viewModel?.videos[indexPath.row] else {
+            return nil
+        }
+        let isWatched = watchedVideos.contains(where: { video.id == $0 })
+
+        let title = isWatched ? "Mark Unwatched" : "Mark Watched"
+
+        let action = UIContextualAction(style: .normal, title: title, handler: { _, _, completionHandler in
+            if isWatched {
+                self.watchedVideos = self.watchedVideos.filter({ $0 != video.id })
+            } else {
+                self.watchedVideos.append(video.id)
+            }
+            self.tableView.reloadRows(at: [indexPath], with: .right)
+            completionHandler(true)
+        })
+
+        action.backgroundColor = isWatched ? .red : .green
+        let configuration = UISwipeActionsConfiguration(actions: [action])
+        return configuration
+    }
+
 }
 
 // MARK: - UITableViewDelegate
