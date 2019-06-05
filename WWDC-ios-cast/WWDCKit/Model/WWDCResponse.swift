@@ -21,6 +21,7 @@ struct WWDCResponse: CodableEquatable {
         let title: String
         let media: Media?
         let originalPublishingDate: Date?
+        let startTime: Date?
         let eventId: String
         let staticContentId: Int
         let webPermalink: String

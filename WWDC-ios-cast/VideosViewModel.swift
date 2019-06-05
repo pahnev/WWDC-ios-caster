@@ -118,7 +118,7 @@ extension VideosViewModel {
         let contentWithMedia = response.contents.filter { $0.media != nil }
 
         let videos = contentWithMedia.map { VideosViewModel.Video(title: $0.title,
-                                                                  date: $0.originalPublishingDate ?? Date.distantPast,
+                                                                  date: $0.originalPublishingDate ?? $0.startTime ?? Date.distantPast,
                                                                   hlsURL: ($0.media?.hls)!,
                                                                   eventName: Event(rawValue: $0.eventId),
                                                                   duration: ($0.media?.duration)!,
